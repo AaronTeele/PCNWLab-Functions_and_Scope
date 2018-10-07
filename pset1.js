@@ -120,7 +120,17 @@ console.log(today); // No, it's the weekday
 
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
+function isItTheWeekend(){
+    let dayOFWeek = new Date()
+    if (dayOFWeek.getDay() === 0 || dayOFWeek.getDay() === 6){
+        return `Yes, it's the weekend`;
+    } else {
+        return `No, it's the weekday`;
+    };
+};
 
+let today = isItTheWeekend();
+console.log(today)
 
 
 /******************
